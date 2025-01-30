@@ -1,11 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online-Super-Shop</title>
+    <!-- Font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
+    <!-- daisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- tailwind cdn -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <style>
+        .sora {
+            font-family: "Sora", serif;
+        }
+
+        .poppins {
+            font-family: "Poppins", serif;
+        }
+
+        *{
+            margin: 0px auto;
+        }
+        header{
+            margin-top: 20px;
+        }
+    </style>
+
 </head>
-<body>
-    
+
+<body class="sora">
+    <header>
+        <!-- navbar section -->
+        <nav>
+            <!-- Responsive -->
+            <div class="md:hidden lg:hidden flex justify-between ">
+                <div>
+                    <img src="./c2-assets/Leaf.png" alt="">
+                </div>
+                <div>
+                    <img src="./c2-assets/Menu Bar.png" alt="">
+                </div>
+            </div>
+            <!-- Large screen -->
+            <div class="flex justify-between">
+                <div class="">
+                    <img src="./c2-assets/logo-header.png" alt="">
+                </div>
+                <div class="flex gap-8 items-center">
+                    <div><a href="link">Product</a></div>
+                    <div><a href="link">Services</a></div>
+                    <div><a href="link">Contact Us</a></div>
+                </div>
+                <div class="flex gap-3 items-center">
+                    <div><img src="./c2-assets/Search Icon.png" alt=""></div>
+                    <div><img src="./c2-assets/Cart Icon.png" alt=""></div>
+                    <div><button class="text-lg border border-[#179800] px-8 py-2 rounded-xl">Login</button></div>
+                    <div><button class="bg-[#179800] rounded-xl text-lg px-8 py-2">Register</button></div>
+                </div>
+            </div>
+        </nav>
+    </header>
 </body>
+
 </html>
