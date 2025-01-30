@@ -30,10 +30,11 @@
             font-family: "Poppins", serif;
         }
 
-        *{
+        * {
             margin: 0px auto;
         }
-        header{
+
+        header {
             margin-top: 20px;
         }
     </style>
@@ -45,7 +46,7 @@
         <!-- navbar section -->
         <nav>
             <!-- Responsive -->
-            <div class="md:hidden lg:hidden flex justify-between ">
+            <div class="m-0px m-auto md:hidden lg:hidden flex justify-between">
                 <div>
                     <img src="./c2-assets/Leaf.png" alt="">
                 </div>
@@ -55,10 +56,11 @@
             </div>
             <!-- Large screen -->
             <div class="hidden md:flex md:justify-between">
-                <div class="">
+                <div>
                     <img src="./c2-assets/logo-header.png" alt="">
                 </div>
-                <div class="flex gap-8 items-center">
+
+                <div class="flex gap-8 items-center text-xl text-black">
                     <div><a href="link">Product</a></div>
                     <div><a href="link">Services</a></div>
                     <div><a href="link">Contact Us</a></div>
@@ -66,12 +68,64 @@
                 <div class="flex gap-3 items-center">
                     <div><img src="./c2-assets/Search Icon.png" alt=""></div>
                     <div><img src="./c2-assets/Cart Icon.png" alt=""></div>
-                    <div><button class="text-lg border border-[#179800] px-8 py-2 rounded-xl">Login</button></div>
-                    <div><button class="bg-[#179800] rounded-xl text-lg px-8 py-2">Register</button></div>
+                    <div><button
+                            class="text-xl border border-[#179800] px-8 py-2 rounded-xl hover:bg-[#179800] hover:text-white">Login</button>
+                    </div>
+                    <div><button
+                            class="bg-[#179800] rounded-xl text-xl px-8 text-white py-2 hover:bg-[white] hover:text-black hover:border border-[#179800]">Register</button>
+                    </div>
+                    <hr>
                 </div>
             </div>
         </nav>
     </header>
+    <!-- banner section -->
+    <section style="background: linear-gradient(180deg, #FFF 0%, #EFEBE3 100%);">
+        <div class="max-w-[1031px] mx-auto bg-cover bg-center my-12 md:my-20 lg:my-28">
+            <div class="mx-auto px-8">
+                <h1 class="text-black text-center text-[32px] md:text-5xl lg:text-[56px] font-semibold">Freshness <span
+                        class="text-[#179800]">You Can<br>Count</span> On, Prices You’ll Love!</h1>
+                <p
+                    class="md:max-w-[799px] mx-auto text-black opacity-80 text-base md:text-lg lg:text-xl text-center p-4 md:p-6 lg:p-8">
+                    Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you
+                    covered every day!</p>
+            </div>
+            <!-- banner image -->
+            <div class="flex justify-center"><img src="./c2-assets/hero-vegetables.png" alt=""></div>
+        </div>
+    </section>
+    <!-- services section -->
+    <section class="max-w-[1320px] mx-auto mb-12 md:mb-16 lg:mb-32">
+        <h3 class="pl-2 text-[#179800] font-semibold text-2xl md:text-3xl lg:text-[36px] mb-8 md:mb-10 lg:mb-12">Services</h3>
+        <!-- All Card -->
+        <div class="px-[18px] md:px-5 lg:px-0 grid md:grid-cols-3 gap-3 md:gap-6">
+            <!-- service card-->
+            <div class="justify-center items-center rounded-[16px] bg-[#EFEBE3]  px-7 md:px-7 lg:px-8 hover:shadow-xl">
+                <div>
+                    <img class="max-w-[100%] my-6 md:my-7 bg-white rounded-[100%] p-4 md:p-5 lg:p-6" src="./c2-assets/service.png" alt="">
+                </div>
+                <h3 class="text-center text-xl md:text-2xl font-[600]">24/7 Services</h3>
+                <p class="text-black opacity-80 mt-3 mb-6 lg:mb-8 text-center lg:text-xl"> 24/7 service provides a sense of reliability and convenience, knowing help is always available when they need it.</p>
+            </div>
+            <!-- delivery Card -->
+            <div class="justify-center items-center rounded-[16px] bg-[#EFEBE3]  px-7 md:px-7 lg:px-8 hover:shadow-xl">
+                <div>
+                    <img class="max-w-[100%] my-6 md:my-7 bg-white rounded-[100%] p-4 md:p-5 lg:p-6" src="./c2-assets/delivery.png" alt="">
+                </div>
+                <h3 class="text-center text-xl md:text-2xl font-[600]">Fast Delivery</h3>
+                <p class="text-black opacity-80 mt-3 mb-6 lg:mb-8 text-center lg:text-xl">For businesses, offering fast delivery can be a competitive advantage.We ensure you fast delivery.</p>
+            </div>
+            <!-- products Card -->
+            <div class="justify-center items-center rounded-[16px] bg-[#EFEBE3]  px-7 md:px-7 lg:px-8 hover:shadow-xl">
+                <div>
+                    <img class="max-w-[100%] my-6 md:my-7 bg-white rounded-[100%] p-4 md:p-5 lg:p-6" src="./c2-assets/healthy.png" alt="24/7 Icon">
+                </div>
+                <h3 class="text-center text-xl md:text-2xl font-[600]">Healthy Products</h3>
+                <p class="text-black opacity-80 mt-3 mb-6 lg:mb-8 text-center lg:text-xl">Fruits, vegetables grown without pesticides. These items are packed with vitamins, minerals,that support the immune system, digestive health.</p>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
