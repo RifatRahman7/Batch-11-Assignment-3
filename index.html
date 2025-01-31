@@ -44,7 +44,7 @@
 <body class="sora">
     <header>
         <!-- navbar section -->
-        <nav>
+        <nav class="max-w-[1320px] mx-auto">
             <!-- Responsive -->
             <div class="m-0px m-auto md:hidden lg:hidden flex justify-between">
                 <div>
@@ -101,12 +101,15 @@
         <!-- All Card -->
         <div class="px-[18px] md:px-5 lg:px-0 grid md:grid-cols-3 gap-3 md:gap-6">
             <!-- service card-->
-            <div class="flex flex-col justify-center items-center rounded-2xl bg-[#EFEBE3] px-6 md:px-7 lg:px-8 shadow-lg hover:shadow-2xl">
+            <div
+                class="flex flex-col justify-center items-center rounded-2xl bg-[#EFEBE3] px-6 md:px-7 lg:px-8 shadow-lg hover:shadow-2xl">
                 <div class="bg-white rounded-full p-4 md:p-5 lg:p-6 my-6 md:my-7 flex justify-center items-center">
                     <img class="max-w-full" src="./c2-assets/service.png" alt="24/7 Icon">
-                </div>                    
+                </div>
                 <h4 class="text-center text-xl md:text-2xl font-semibold">24/7 Services</h4>
-                <p class="text-black opacity-70 mt-3 mb-8 lg:mb-8 text-center text-base md:text-lg lg:text-xl">Fresh, high-quality vegetables delivered daily. Affordable prices, fast delivery, freshness & seasonal products available.</p>
+                <p class="text-black opacity-70 mt-3 mb-8 lg:mb-8 text-center text-base md:text-lg lg:text-xl">Fresh,
+                    high-quality vegetables delivered daily. Affordable prices, fast delivery, freshness & seasonal
+                    products available.</p>
             </div>
             <!-- delivery Card -->
             <div class="justify-center items-center rounded-[16px] bg-[#EFEBE3]  px-7 md:px-7 lg:px-8 hover:shadow-xl">
@@ -131,15 +134,15 @@
             </div>
         </div>
     </section>
-    <!-- popular product section -->
+    <!-- popular products section -->
     <section class="bg-[#EFEBE3]">
         <div class="max-w-[1320px] mx-auto pt-12 md:pt-16 lg:pt-32 pb-12 md:pb-16 lg:pb-32 mb-12 md:mb-16 lg:mb-32">
             <!-- Popular Product -->
-            <h3 class="pl-2 text-[#179800] font-semibold text-2xl md:text-3xl lg:text-4xl mb-9 md:mb-12 lg:mb-12">
+            <h3 class="pl-2 text-[#179800] font-semibold text-2xl md:text-3xl lg:text-[36px] lg:ml-3 mb-9 md:mb-12 lg:mb-12">
                 Popular Products</h3>
             <!-- Vegetable Cards -->
             <div class="px-2 lg:px-0 lg:flex lg:items-center lg:gap-6">
-                <!-- Green Card -->
+                <!-- Green-banana Card -->
                 <div class="relative h-[360px] lg:h-[400px] lg:w-[424px] rounded-[8px]"
                     style="background: linear-gradient(135deg, #26eb04 0%, #EFEBE3 100%);">
                     <div class="pl-5 md:pl-6 pt-6 md:pt-7 lg:pt-8">
@@ -162,7 +165,7 @@
                         <div>
                             <div class="flex gap-2 md:gap-[10px]">
                                 <div><img src="./c2-assets/full-star.png" alt="star"></div>
-                                <p class="text-[10px] md:text-sm">4.5</p>
+                                <p class="text-[10px] md:text-[14px]">4.5</p>
                             </div>
                             <div>
                                 <h4 class="text-xs md:text-lg lg:text-xl font-[500] md:my-1">Onions 1 KG</h4>
@@ -210,7 +213,7 @@
                                 <p class="text-[10px] md:text-sm">5.00</p>
                             </div>
                             <div>
-                                <h4 class="text-xs md:text-lg lg:text-xl font-[500] md:my-1">Onions 1 KG</h4>
+                                <h4 class="text-[12px] md:text-[18px] lg:text-[20px] font-[500] md:my-1">Onions 1 KG</h4>
                                 <p class="text-[10px] md:text-[15px]">$15.99</p>
                             </div>
                         </div>
@@ -255,7 +258,7 @@
                                 <p class="text-[10px] md:text-sm">4.5</p>
                             </div>
                             <div>
-                                <h4 class="text-xs md:text-lg lg:text-xl font-[500] md:my-1">Tomato 1 KG</h4>
+                                <h4 class="text-xs md:text-[18px] lg:text-[20px] font-[500] md:my-1">Tomato 1 KG</h4>
                                 <p class="text-[10px] md:text-[15px]">$49.99</p>
                             </div>
                         </div>
@@ -267,7 +270,7 @@
                         <div>
                             <div class="flex gap-2 md:gap-[10px]">
                                 <div><img src="./c2-assets/full-star.png" alt="star"></div>
-                                <p class="text-[10px] md:text-sm">4.2</p>
+                                <p class="text-[10px] md:text-[14px]">4.2</p>
                             </div>
                             <div>
                                 <h4 class="text-xs md:text-lg lg:text-xl font-[500] md:my-1">Garlics 1 KG</h4>
@@ -282,7 +285,7 @@
                         <div>
                             <div class="flex gap-2 md:gap-[10px]">
                                 <div><img src="./c2-assets/full-star.png" alt="star"></div>
-                                <p class="text-[10px] md:text-sm">4.5</p>
+                                <p class="text-[10px] md:text-[14px]">4.5</p>
                             </div>
                             <div>
                                 <h4 class="text-xs md:text-lg lg:text-xl font-[500] md:my-1">Potato 1 KG</h4>
@@ -294,7 +297,36 @@
             </div>
         </div>
     </section>
+    <!-- Arrival and Offer section -->
+    <section class="max-w-[1320px] mx-auto mb-[320px] md:mb-[200px] lg:mb-[390px]">
+        <!-- Title -->
+        <h3 class="pl-2 text-[#179800] font-semibold text-[24px] md:text-[30px] lg:text-[36px] mb-8 md:mb-10 lg:mb-12">Arrival & Offers</h3>
 
+        <div class="md:flex md:gap-5 md:justify-center px-3 md:px-0 mb-12 md:mb-20 lg:mb-40">
+            <!-- Dawat Card -->
+            <div class="[flex-3] xl:w-[780px] bg-[#115414] rounded-xl md:rounded-3xl flex items-center justify-between lg:gap-12 mb-4 md:mb-0 shadow-xl hover:shadow-2xl">
+                <div class="ml-10 py-[26px] md:py-8 lg:py-12 pl-[18px] md:pl-6 lg:pl-[40px]">
+                    <img src="./c2-assets/dawat-logo.png" alt="Dawat Logo">
+                    <button class="poppins text-white px-[14px] md:px-7 lg:px-9 py-2 md:text-[12px] lg:text-[23px] md:py-3 lg:py-[14px] bg-[#63B760] rounded-lg md:rounded-xl my-[18px] md:my-6 lg:my-8 hover:shadow-lg transition duration-3 ease-in-out hover:bg-[#498500]">Cook Exotic Dishes</button>
+                    <h5 class="poppins text-white text-[22px] md:text-[26px] lg:text-[40px] font-medium">UP to <span class="font-bold">20% OFF</span></h5>
+                </div>
+                <div>
+                    <img class="mt-4 mb-3 pt-2 lg:pt-3" src="./c2-assets/dawat-mock-up.png" alt="">
+                </div>
+            </div>
+            <!-- India gate card -->
+            <div class="[flex-2] bg-[#102861] rounded-xl md:rounded-3xl flex items-center justify-between lg:gap-5">
+                <div class="py-[26px] md:py-7 pl-[18px] md:pl-5 lg:pl-8">
+                    <img src="./c2-assets/india-gate-logo.png" alt="India-gate logo">
+                    <button class="poppins md:text-[12px] text-white px-[18px] md:px-7 lg:px-9 py-2 md:py-3 lg:py-[14px] lg:text-[23px] bg-[#2A4D97] rounded-lg md:rounded-xl my-2 md:my-3 lg:my-4 hover:shadow-lg transition duration-3 ease-in-out hover:bg-[#213869]">World's No.1 Rice</button>
+                    <h5 class="poppins text-white text-[22px] md:text-[30px] lg:text-[36px] font-medium">UP to <span class="font-semibold">40% OFF</span></h5>
+                </div>
+                <div>
+                    <img class="pt-2 pr-1 md:pr-[10px] lg:pt-3" src="./c2-assets/india-gate-mock-up.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 
